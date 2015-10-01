@@ -9,3 +9,59 @@ and open the template in the editor.
 */
 
 
+body{
+    background-color: #003B46;
+    color:white;
+
+    
+}
+h4{
+    text-align:center;
+}
+
+hr{
+    height:3px;
+    border:none;
+    border-top:2px solid white;
+    width:80%;
+}
+table{
+    margin-left:20%;
+    margin-right:20%;
+}
+
+#salarybox{
+    border:solid 2px white;
+    background-color:#07575B;
+    width: 500px;
+    font-size:20px;
+}
+
+input{
+    width:150px;
+}
+
+#resultchart{
+    border:solid 2px white;
+    margin:0 atuo;
+    width:400px;
+    height:400px;
+    font-size:20px;
+}
+
+
+
+
+#button{
+    margin:0 auto;
+    text-align:center;
+}
+
+.button{
+    text-align: center;
+    border:none;
+    background:no-repeat top left;
+    padding: 2px 8px;
+    background-color:#C4DFE6;
+    
+}
