@@ -14,9 +14,10 @@ hr{
     border-top:2px solid black;
     width:80%;
 }
+
 table{
     margin-left:20%;
-    margin-right:20%;
+    margin-right:10%;
 }
 
 #salarybox{
@@ -34,7 +35,7 @@ input{
     border:solid 2px black;
     margin:0 atuo;
     width:400px;
-    height:400px;
+    height:450px;
     font-size:20px;
     background-color: #A4DBED;
 }
