@@ -1,11 +1,3 @@
-<%-- 
-    Document   : results
-    Created on : Sep 28, 2015, 7:37:43 PM
-    Author     : Jiawen
---%>
-
-
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -16,7 +8,6 @@
 
      <%
             Double hoursWorked = Double.parseDouble(request.getParameter("HoursWorked"));
-
             Double hourlyPay = Double.parseDouble(request.getParameter("HourlyPay"));
             Double PretaxDeducted = Double.parseDouble(request.getParameter("PretaxDeducted"));
             Double posttaxDeducted = Double.parseDouble(request.getParameter("PosttaxDeduct"));
@@ -31,31 +22,22 @@
              hoursovertime = hoursWorked - 40;
             if (hoursWorked > 40) {
                
-            
             otPayrate = hourlyPay * 1.5;
             grosspay = 40 * hourlyPay + hoursovertime * otPayrate;
         }
-
-            else{
+      else{
         grosspay = hoursWorked * hourlyPay;
         }
+            pretaxpay  = grosspay - PretaxDeducted;
 
-        pretaxpay  = grosspay - PretaxDeducted;
-
-        if (grosspay
-
-        
-            <=500)
+        if (grosspay<=500)
         { taxAmount = pretaxpay * 0.18;
         }
-
-        
-            else{
+         else{
         taxAmount = pretaxpay * 0.22;
-           
-        }
+     }
          postTaxpay = pretaxpay - taxAmount;
-            netpay = postTaxpay - posttaxDeducted;
+         netpay = postTaxpay - posttaxDeducted;
     %>
 
     <body>
