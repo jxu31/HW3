@@ -19,13 +19,14 @@
             Double postTaxpay;
             Double netpay;
             
-             hoursovertime = hoursWorked - 40;
+             
             if (hoursWorked > 40) {
-               
+            hoursovertime = hoursWorked - 40;   
             otPayrate = hourlyPay * 1.5;
             grosspay = 40 * hourlyPay + hoursovertime * otPayrate;
         }
       else{
+                hoursovertime = hoursWorked*0;
         grosspay = hoursWorked * hourlyPay;
         }
             pretaxpay  = grosspay - PretaxDeducted;
@@ -90,7 +91,7 @@
                 <tr>
                     <td>Post-tax Pay:</td>
                     <td>
-                        <%=posttaxDeducted%>
+                        <%=postTaxpay%>
                     </td>
                 </tr>
                 <tr>

@@ -1,7 +1,7 @@
 body{
     background-color: #C5EFFC;
     color:black;
-
+    
     
 }
 h4{
@@ -22,7 +22,7 @@ table{
 #salarybox{
     border:solid 2px black;
     background-color:#A4DBED;
-    width: 500px;
+    width: 30%;
     font-size:20px;
 }
 
@@ -36,10 +36,8 @@ input{
     width:400px;
     height:400px;
     font-size:20px;
+    background-color: #A4DBED;
 }
-
-
-
 
 #button{
    margin-bottom:10%;
