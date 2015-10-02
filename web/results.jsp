@@ -50,15 +50,15 @@
             <tbody>
                 <tr>
                     <td>Total Hours Worked:</td>
-                    <td> <%=hoursWorked%> </td>
+                    <td class="r"> <%=hoursWorked%> </td>
                 </tr>
                 <tr>
                     <td>Hourly Rate:</td>
-                    <td><%= hourlyPay%></td>
+                    <td class="r"><%= hourlyPay%></td>
                 </tr>
                 <tr>
                     <td>#Hours Overtime:</td>
-                    <td>
+                    <td class="r">
 
                         <%= hoursovertime%>
                     </td>
@@ -66,43 +66,43 @@
                 </tr>
                 <tr>
                     <td>Gross Pay:</td>
-                    <td>
+                    <td class="r">
                         <%=grosspay%>
                     </td>
                 </tr>
                 <tr>
                     <td>Pre-tax Deduct:</td>
-                    <td>
+                    <td class="r">
                         <%= PretaxDeducted%>
                     </td>
                 </tr>
                 <tr>
                     <td>Pre-tax Pay:</td>
-                    <td>
+                    <td class="r">
                         <%=pretaxpay%>
                     </td>
                 </tr>
                 <tr>
                     <td>Tax Amount:</td>
-                    <td>
+                    <td class="r">
                         <%=taxAmount%>
                     </td>
                 </tr>
                 <tr>
                     <td>Post-tax Pay:</td>
-                    <td>
+                    <td class="r">
                         <%=postTaxpay%>
                     </td>
                 </tr>
                 <tr>
                     <td>Post-tax Deduct:</td>
-                    <td>
+                    <td class="r">
                         <%= posttaxDeducted%>
                     </td>
                 </tr>
                 <tr>
                     <td>Net Pay:</td>
-                    <td>
+                    <td class="r">
                         <%=netpay%>
                     </td>
                 </tr>
