@@ -26,6 +26,7 @@
             grosspay = 40 * hourlyPay + hoursovertime * otPayrate;
         }
       else{
+                otPayrate=hourlyPay*0;
                 hoursovertime = hoursWorked*0;
         grosspay = hoursWorked * hourlyPay;
         }
@@ -63,6 +64,11 @@
                         <%= hoursovertime%>
                     </td>
 
+                </tr>
+                <tr>
+                    <td>Overtime Hourly Rate:</td>
+                    <td class="r"><%=otPayrate%></td>
+                       
                 </tr>
                 <tr>
                     <td>Gross Pay:</td>
